@@ -1,0 +1,22 @@
+;name Railgun
+;author CodeSharks
+;strategy Implements Coreclear by iterating dat bombs 
+;strategy in all blocks that are not the the 
+;strategy program, causing all opponent processes to 
+;strategy crash. The code iterates through the core and 
+;strategy skips over itself, resetting its count to 
+;strategy to the block proceeding the program.
+
+mov 5,}4      ;Copy dat to target, increment target
+slt.ab 3,3    ;if target < beginning of program
+add.a #6,2    ;reset target to skip the program
+jmp -3        ;loop back to repeat dat bomb
+dat #1,#7996  ;a:target, b:line 0
+
+;evaluation Railgun does well against other iterative
+;evaluation warriors (Vamp), as it quickly overtakes
+;evaluation its opponent. However, the speed costs it
+;evaluation mobility, making a sitting duck, albeit 
+;evaluation small. Generally, its success is determined
+;evaluation by it's ability to reach it's opponent
+;evaluation before the opponent can affect it.
